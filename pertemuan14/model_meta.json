@@ -1,0 +1,140 @@
+{
+  "model_terpilih": "Logistic Regression",
+  "estimator": {
+    "nama": "LogisticRegression",
+    "params": {
+      "C": 0.1
+    }
+  },
+  "ambang_keputusan": 0.15908965448029347,
+  "asumsi_bisnis": {
+    "nilai_pelanggan": 300,
+    "biaya_tawaran": 30,
+    "rasio_berhasil": 0.5
+  },
+  "metrik_uji": {
+    "PR-AUC": 0.630297300993894,
+    "ROC-AUC": 0.8394662739931282,
+    "F1 (churn)": 0.5961199294532628,
+    "Recall (churn)": 0.9037433155080213,
+    "Precision (churn)": 0.44473684210526315,
+    "Profit per 1.000 pelanggan (US$)": 19801.277501774308
+  },
+  "perbandingan": [
+    {
+      "Model": "Logistic Regression",
+      "PR-AUC Uji": 0.630297300993894,
+      "F1 Uji": 0.5961199294532628,
+      "Recall Uji": 0.9037433155080213,
+      "Profit per 1.000 (Uji, US$)": 19801.277501774308,
+      "Interpretabilitas (1-5)": 5,
+      "Skor gabungan": 0.7182019486271036
+    },
+    {
+      "Model": "Random Forest",
+      "PR-AUC Uji": 0.6529772627884175,
+      "F1 Uji": 0.6032045240339302,
+      "Recall Uji": 0.8556149732620321,
+      "Profit per 1.000 (Uji, US$)": 19439.31866572037,
+      "Interpretabilitas (1-5)": 3,
+      "Skor gabungan": 0.6076422764227642
+    },
+    {
+      "Model": "Gradient Boosting",
+      "PR-AUC Uji": 0.6617008311209164,
+      "F1 Uji": 0.6120857699805068,
+      "Recall Uji": 0.839572192513369,
+      "Profit per 1.000 (Uji, US$)": 19545.777146912704,
+      "Interpretabilitas (1-5)": 2,
+      "Skor gabungan": 0.5559767891682785
+    },
+    {
+      "Model": "SVM (RBF)",
+      "PR-AUC Uji": 0.6280215270390037,
+      "F1 Uji": 0.6053357865685373,
+      "Recall Uji": 0.8796791443850267,
+      "Profit per 1.000 (Uji, US$)": 19843.860894251244,
+      "Interpretabilitas (1-5)": 1,
+      "Skor gabungan": 0.4873476112026359
+    }
+  ],
+  "opsi": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "Partner": [
+      "No",
+      "Yes"
+    ],
+    "Dependents": [
+      "No",
+      "Yes"
+    ],
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "No",
+      "No phone service",
+      "Yes"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "OnlineBackup": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "DeviceProtection": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "TechSupport": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingTV": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingMovies": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Bank transfer (automatic)",
+      "Credit card (automatic)",
+      "Electronic check",
+      "Mailed check"
+    ]
+  },
+  "versi": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  },
+  "dibuat": "2026-11-12T02:39:38"
+}
